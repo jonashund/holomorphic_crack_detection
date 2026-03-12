@@ -1,0 +1,29 @@
+# Python cache files
+*__pycache__
+# Deprecated files
+/delete/*
+
+# Plots and results
+/plots/*
+/results/*
+/test/*
+*.png
+*.jpg
+*.eps
+*.pdf
+
+# Saved models
+*.dict
+*.dat
+!requirements.txt
+
+# Python distribution 
+dist/*
+*.egg-info
+build/*
+
+# Documentation
+docs/_build
+
+# Experiments
+experimental/

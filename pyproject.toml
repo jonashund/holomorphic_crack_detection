@@ -1,0 +1,19 @@
+[tool.setuptools]
+packages = ["hnnga"]
+
+[build-system]
+requires = ["setuptools>=65", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hnnga-package"
+authors = [
+    { name = "Jonas Hund", email = "jonas.hund@mpe.au.dk" },
+    { name = "Nicolas Cuenca", email = "nicolas.cuenca@sigma-clermont.fr" },
+    { name = "Tito Andriollo", email = "titoan@mpe.au.dk" },
+]
+description = "Genetic algorithm combined with holomorphic neural networks"
+version = "1.0"
+readme = "README.md"
+license = { text = "LGPL-2.1" }
+requires-python = ">=3.10"

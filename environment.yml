@@ -1,0 +1,17 @@
+name: holomorphic_crack_detection
+
+channels:
+  - anaconda
+  - conda-forge
+
+dependencies:
+  - python>=3.10
+  - matplotlib>=3.5.0
+  - numpy>=1.22.0
+  - scipy>=1.9.0
+  - tqdm
+  - pip
+  - pip:
+      - torch --index-url https://download.pytorch.org/whl/cu12.4
+      - git+https://github.com/teocala/pihnn.git
+      - -e .
