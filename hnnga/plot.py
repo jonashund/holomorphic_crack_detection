@@ -57,7 +57,6 @@ def plot_population(
     target,
     ax,
 ):
-
     plt.rcParams["lines.solid_capstyle"] = "round"
     colors = [
         "#e69f00",
@@ -281,6 +280,33 @@ def plot_crack_vs_target(
     ax.set_aspect("equal")
     ax.grid(True)
     plt.tight_layout()
+    fig.savefig(out_path)
+    plt.close(fig)
+
+
+def plot_figure_population(
+    population_dict,
+    target,
+    generation,
+    xlim=(-1.0, 1.0),
+    ylim=(-1.0, 1.0),
+    out_dir="./hnnga_solution/",
+):
+    fig = plt.figure(figsize=(8, 6))  # width=8 inches, height=6 inches
+    ax = fig.add_subplot(111)
+    plot_population(
+        population_dict=population_dict,
+        target=target,
+        ax=ax,
+    )
+    ax.set_xlim(xlim)
+    ax.set_ylim(ylim)
+    title_str = f"Gen. {generation}"
+    ax.set_title(title_str)
+    ax.set_aspect("equal")
+    ax.grid(True)
+    plt.tight_layout()
+    out_path = os.path.join(out_dir, f"population_gen_{generation}.png")
     fig.savefig(out_path)
     plt.close(fig)
 
