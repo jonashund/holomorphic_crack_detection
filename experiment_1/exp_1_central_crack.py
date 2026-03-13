@@ -121,6 +121,11 @@ def main(
             generation=gen,
             out_path=os.path.join(out_dir, "crack_gen_0.png"),
         )
+        plot.plot_figure_population(
+            population_dict=cracks_data,
+            target=crack_target,
+            generation=gen,
+        )
 
     io.export_population(
         cracks_data=cracks_data,
@@ -217,6 +222,11 @@ def main(
                     residual=cracks_data[0][3],
                     generation=gen,
                     out_path=os.path.join(out_dir, f"crack_gen_{gen}.png"),
+                )
+                plot.plot_figure_population(
+                    population_dict=cracks_data,
+                    target=crack_target,
+                    generation=gen,
                 )
 
             io.export_population(
@@ -342,6 +352,11 @@ def main(
                 residual=cracks_data[0][3],
                 generation=gen,
                 out_path=os.path.join(out_dir, f"crack_gen_{gen}.png"),
+            )
+            plot.plot_figure_population(
+                population_dict=cracks_data,
+                target=crack_target,
+                generation=gen,
             )
         io.export_population(
             cracks_data=cracks_data,
