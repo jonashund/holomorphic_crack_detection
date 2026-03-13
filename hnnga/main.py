@@ -197,7 +197,7 @@ def compute_stress(
         scheduler_apply,
         scheduler_gamma=0.5,
         dir=out_dir,
-        save_model=False,
+        # save_model=False,
     )
 
     z_data = torch.view_as_complex(
