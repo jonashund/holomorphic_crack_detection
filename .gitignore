@@ -27,3 +27,6 @@ docs/_build
 
 # Experiments
 experimental/
+
+# Files created by scripts
+/experiment_1/hnnga_solution/*
