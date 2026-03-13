@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hnnga-package"
 authors = [
-    { name = "Jonas Hund", email = "jonas.hund@mpe.au.dk" },
+    { name = "Jonas Hund", email = "jonas.hund@gmx.de" },
     { name = "Nicolas Cuenca", email = "nicolas.cuenca@sigma-clermont.fr" },
     { name = "Tito Andriollo", email = "titoan@mpe.au.dk" },
 ]
