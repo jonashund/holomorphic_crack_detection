@@ -11,6 +11,7 @@ on:
 jobs:
   pytest:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
@@ -24,12 +25,12 @@ jobs:
       - name: install dependencies
         run: |
           conda env create --name whatever -f environment.yml
-      - name: activate environment
-        run: |
-            conda activate whatever
+    #   - name: activate environment
+    #     run: |
+    #         conda activate whatever
       - name: install pytest
         run: |
-          conda install pytest
+          conda run -n whatever conda install -y pytest
       - name: run pytest
         run: |
-          pytest
+          conda run -n whatever pytest
