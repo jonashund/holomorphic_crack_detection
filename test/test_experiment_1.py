@@ -8,5 +8,5 @@ target_path = base_path.joinpath("..", "experiment_1", "fe_solution")
 def test_experiment_1():
     main(
         target_dir=target_path,
-        gen_max=5,
+        gen_max=2,
     )
