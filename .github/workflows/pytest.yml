@@ -33,4 +33,4 @@ jobs:
           conda run -n whatever conda install -y pytest
       - name: run pytest
         run: |
-          conda run -n whatever pytest
+          conda run -n whatever python -m pytest
